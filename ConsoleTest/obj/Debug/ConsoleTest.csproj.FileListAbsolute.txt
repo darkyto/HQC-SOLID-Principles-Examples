@@ -1,0 +1,10 @@
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\bin\Debug\ConsoleTest.exe
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\bin\Debug\ConsoleTest.pdb
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\bin\Debug\HQC-Solid-and-other-Principles.dll
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\bin\Debug\nunit.framework.dll
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\bin\Debug\HQC-Solid-and-other-Principles.pdb
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\bin\Debug\nunit.framework.xml
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\obj\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\obj\Debug\ConsoleTest.exe
+D:\TELERIK\KPK\TRAINING\HQC-Solid-and-other-Principles\ConsoleTest\obj\Debug\ConsoleTest.pdb

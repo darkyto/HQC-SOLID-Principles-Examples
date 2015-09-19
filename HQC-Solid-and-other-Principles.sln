@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQC-Solid-and-other-Principles", "HQC-Solid-and-other-Principles\HQC-Solid-and-other-Principles.csproj", "{FFD76B61-0244-4243-A572-62C195B91E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{7ECB986E-3F2E-4568-8894-D21A9744A514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{BDEA1DF9-A9C4-4DEE-A3EB-BFEB2F0FB37C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFD76B61-0244-4243-A572-62C195B91E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD76B61-0244-4243-A572-62C195B91E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD76B61-0244-4243-A572-62C195B91E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD76B61-0244-4243-A572-62C195B91E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ECB986E-3F2E-4568-8894-D21A9744A514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ECB986E-3F2E-4568-8894-D21A9744A514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ECB986E-3F2E-4568-8894-D21A9744A514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ECB986E-3F2E-4568-8894-D21A9744A514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEA1DF9-A9C4-4DEE-A3EB-BFEB2F0FB37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEA1DF9-A9C4-4DEE-A3EB-BFEB2F0FB37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEA1DF9-A9C4-4DEE-A3EB-BFEB2F0FB37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEA1DF9-A9C4-4DEE-A3EB-BFEB2F0FB37C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

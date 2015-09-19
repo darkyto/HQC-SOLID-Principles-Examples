@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFD76B61-0244-4243-A572-62C195B91E59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HQC_Solid_and_other_Principles</RootNamespace>
+    <AssemblyName>HQC-Solid-and-other-Principles</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.core, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.core.interfaces, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="nunit.util, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NUnit.VisualStudio.TestAdapter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DependencyInversion\Database\Contracts\ICourseData.cs" />
+    <Compile Include="DependencyInversion\Database\CoursesConstructor.cs" />
+    <Compile Include="DependencyInversion\Database\CourseData.cs" />
+    <Compile Include="DependencyInversion\Database\CoursesParameter.cs" />
+    <Compile Include="DependencyInversion\Database\CoursesProperty.cs" />
+    <Compile Include="DependencyInversion\HelloWorld\HelloWorld.cs" />
+    <Compile Include="DependencyInversion\Worker\Contracts\IWorker.cs" />
+    <Compile Include="DependencyInversion\Worker\HighPerformer.cs" />
+    <Compile Include="DependencyInversion\Worker\Manager.cs" />
+    <Compile Include="DependencyInversion\Worker\Worker.cs" />
+    <Compile Include="DontRepeatYourself\Students\Student.cs" />
+    <Compile Include="DontRepeatYourself\Students\StudentData.cs" />
+    <Compile Include="InterfaceSegregation\Identity\AccountController.cs" />
+    <Compile Include="InterfaceSegregation\Identity\AccountManager.cs" />
+    <Compile Include="InterfaceSegregation\Identity\Contracts\IAccountAuthenticator.cs" />
+    <Compile Include="InterfaceSegregation\Identity\Contracts\IAccountFinder.cs" />
+    <Compile Include="InterfaceSegregation\Identity\Contracts\IAccountManager.cs" />
+    <Compile Include="InterfaceSegregation\Identity\Contracts\IAccountSettings.cs" />
+    <Compile Include="InterfaceSegregation\Identity\Contracts\IUser.cs" />
+    <Compile Include="InterfaceSegregation\Worker\Contracts\IEater.cs" />
+    <Compile Include="InterfaceSegregation\Worker\Contracts\ISleeper.cs" />
+    <Compile Include="InterfaceSegregation\Worker\Contracts\IWorker.cs" />
+    <Compile Include="InterfaceSegregation\Worker\Robot.cs" />
+    <Compile Include="InterfaceSegregation\Worker\Human.cs" />
+    <Compile Include="KeepItSimpleStupid\Mp3Mover.cs" />
+    <Compile Include="LiskovSubstitution\Employees\DetailsPrinter.cs" />
+    <Compile Include="LiskovSubstitution\Employees\Employee.cs" />
+    <Compile Include="LiskovSubstitution\Employees\Manager.cs" />
+    <Compile Include="LiskovSubstitution\Movement\Controls\IMovable.cs" />
+    <Compile Include="LiskovSubstitution\Movement\Controls\IRotatable.cs" />
+    <Compile Include="LiskovSubstitution\Movement\Controls\ITranslatable.cs" />
+    <Compile Include="LiskovSubstitution\Movement\MovableObject.cs" />
+    <Compile Include="LiskovSubstitution\Movement\RotatableObject.cs" />
+    <Compile Include="LiskovSubstitution\Movement\TranslatableObject.cs" />
+    <Compile Include="LiskovSubstitution\Shapes\Rectangle.cs" />
+    <Compile Include="LiskovSubstitution\Shapes\Shape.cs" />
+    <Compile Include="LiskovSubstitution\Shapes\Square.cs" />
+    <Compile Include="LiskovSubstitution\Shapes\Tests.cs" />
+    <Compile Include="OpenClosed\DrawingShape\CicrleDrawingManager.cs" />
+    <Compile Include="OpenClosed\DrawingShape\Circle.cs" />
+    <Compile Include="OpenClosed\DrawingShape\Contracts\IDrawingManager.cs" />
+    <Compile Include="OpenClosed\DrawingShape\Contracts\IShape.cs" />
+    <Compile Include="OpenClosed\DrawingShape\DrawingManager.cs" />
+    <Compile Include="OpenClosed\DrawingShape\Rectangle.cs" />
+    <Compile Include="OpenClosed\DrawingShape\RectangleDrawingManager.cs" />
+    <Compile Include="OpenClosed\DrawingShape\TriangleDrawingManager.cs" />
+    <Compile Include="OpenClosed\DrawingShape\Triangle.cs" />
+    <Compile Include="OpenClosed\FileStream\Contracts\IResult.cs" />
+    <Compile Include="OpenClosed\FileStream\File.cs" />
+    <Compile Include="OpenClosed\FileStream\Music.cs" />
+    <Compile Include="OpenClosed\FileStream\Progress.cs" />
+    <Compile Include="OpenClosed\FileStream\VIdeo.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\Buy4GetOneFree.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\Cart.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\Contracts\IPriceRule.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\Contracts\IPricingCalculator.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\EachPriceRule.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\OrderItem.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\PerGramPriceRule.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\PricingCalculator.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\SpecialPriceRule.cs" />
+    <Compile Include="OpenClosed\ShoppingCart\WildPriceRule.cs" />
+    <Compile Include="SingleResponsibility\Books\Book.cs" />
+    <Compile Include="SingleResponsibility\Books\Library.cs" />
+    <Compile Include="SingleResponsibility\DrawingShape\Contracts\IDrawingContext.cs" />
+    <Compile Include="SingleResponsibility\DrawingShape\Contracts\IDrawingManager.cs" />
+    <Compile Include="SingleResponsibility\DrawingShape\Contracts\IRenderer.cs" />
+    <Compile Include="SingleResponsibility\DrawingShape\Contracts\IShape.cs" />
+    <Compile Include="SingleResponsibility\DrawingShape\DrawingManager.cs" />
+    <Compile Include="SingleResponsibility\DrawingShape\Rectangle.cs" />
+    <Compile Include="SingleResponsibility\DrawingShape\Square.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
